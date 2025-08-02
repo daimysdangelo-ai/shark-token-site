@@ -1,126 +1,167 @@
 # shark-token-site
 site officiel de The Shark TOKEN - Projet Web3 base sur Solana
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Shark Token</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0e0e0e;
-      color: white;
-    }
-    header {
-      background: linear-gradient(to right, #003b5c, #000000);
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 18px;
-      color: #bbb;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #00c3ff;
-      margin-bottom: 20px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    table, th, td {
-      border: 1px solid #444;
-    }
-    th, td {
-      padding: 12px;
-      text-align: left;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #111;
-      color: #777;
-    }
-    a.button {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: #00c3ff;
-      color: #000;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 10px;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Shark Token</title>
+<style>
+  /* Reset simple */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #001f3f 0%, #004080 100%);
+    color: #e0f7fa;
+    line-height: 1.6;
+  }
+  header {
+    background: #003366;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #00bcd4;
+  }
+  header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+  }
+  header .logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  nav a {
+    color: #00bcd4;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #80deea;
+  }
+  main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  section {
+    margin-bottom: 60px;
+  }
+  h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+  }
+  ul.features {
+    list-style: none;
+  }
+  ul.features li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+  }
+  .roadmap {
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .roadmap ul {
+    list-style: none;
+  }
+  .roadmap li {
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  footer {
+    background: #003366;
+    padding: 15px;
+    text-align: center;
+    color: #80deea;
+    font-size: 0.9rem;
+  }
+  .contact a {
+    color: #00bcd4;
+    margin: 0 8px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .contact a:hover {
+    color: #80deea;
+  }
+</style>
 </head>
 <body>
 
 <header>
-  <h1>🦈 The Shark Token</h1>
-  <p>Nage avec nous... ou deviens la proie.</p>
-  <a class="button" href="#discord">Rejoindre Discord</a>
-  <a class="button" href="#whitepaper">Lire le Whitepaper</a>
+  <svg class="logo" viewBox="0 0 64 64" fill="#00bcd4" xmlns="http://www.w3.org/2000/svg">
+    <path d="M32 2C15 2 2 15 2 32c0 17 13 30 30 30s30-13 30-30C62 15 49 2 32 2zm12 45-8-8-8 8-6-6 8-8-8-8 6-6 8 8 8-8 6 6-8 8 8 8-6 6z"/>
+  </svg>
+  <h1>The Shark Token</h1>
+  <nav>
+    <a href="#presentation">Présentation</a>
+    <a href="#features">Fonctionnalités</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<section id="about">
-  <h2>À propos</h2>
-  <p><strong>The Shark Token (SHARK)</strong> est un token communautaire construit sur Solana. 
-    Il incarne la puissance, l'instinct et la domination dans l’univers Web3. 
-    Pas de fausses promesses, juste une base solide et une identité forte.</p>
-</section>
+<main>
+  <section id="presentation">
+    <h2>Présentation</h2>
+    <p>
+      The Shark Token est un token innovant basé sur Solana, conçu pour apporter puissance, rapidité, et gouvernance communautaire.
+      Notre objectif est de créer un écosystème solide pour les amateurs de crypto, avec des défis, des récompenses, et une roadmap ambitieuse.
+    </p>
+  </section>
 
-<section id="tokenomics">
-  <h2>Tokenomics</h2>
-  <table>
-    <tr><th>Élément</th><th>Pourcentage</th></tr>
-    <tr><td>Supply totale</td><td>1 000 000 000 SHARK</td></tr>
-    <tr><td>Prévente</td><td>20%</td></tr>
-    <tr><td>Liquidity Pool</td><td>40%</td></tr>
-    <tr><td>Développement</td><td>15%</td></tr>
-    <tr><td>Marketing</td><td>15%</td></tr>
-    <tr><td>Airdrop / Communauté</td><td>10%</td></tr>
-  </table>
-</section>
+  <section id="features">
+    <h2>Fonctionnalités clés</h2>
+    <ul class="features">
+      <li>✅ Token rapide et sécurisé basé sur la blockchain Solana</li>
+      <li>✅ Gouvernance décentralisée pour une communauté active</li>
+      <li>✅ Intégration future de défis et récompenses (DeFi & NFT)</li>
+      <li>✅ Transparence totale et audits réguliers</li>
+      <li>✅ Facilité d’accès et d’utilisation via notre futur wallet dédié</li>
+    </ul>
+  </section>
 
-<section id="roadmap">
-  <h2>Roadmap</h2>
-  <ul>
-    <li><strong>Phase 1 - Lancement :</strong> création du token, publication branding, première communauté</li>
-    <li><strong>Phase 2 - Expansion :</strong> whitepaper, airdrops, partenariats, utilités (staking, NFT...)</li>
-    <li><strong>Phase 3 - Consolidation :</strong> listing DEX, gouvernance DAO, intégrations Web3</li>
-  </ul>
-</section>
+  <section id="roadmap" class="roadmap">
+    <h2>Roadmap du projet</h2>
+    <ul>
+      <li>Q3 2025 : Lancement officiel du token sur Solana</li>
+      <li>Q4 2025 : Mise en place de la gouvernance communautaire</li>
+      <li>Q1 2026 : Développement des défis et récompenses</li>
+      <li>Q2 2026 : Lancement du wallet dédié</li>
+      <li>Q3 2026 : Expansion dans l’écosystème NFT</li>
+    </ul>
+  </section>
 
-<section id="whitepaper">
-  <h2>Whitepaper</h2>
-  <p>📄 Le whitepaper complet est en cours de rédaction. Il sera bientôt disponible en téléchargement ici.</p>
-</section>
-
-<section id="community">
-  <h2>Rejoindre la communauté</h2>
-  <p>Retrouvez-nous ici :</p>
-  <ul>
-    <li>🐦 Twitter : <a href="https://x.com/TheSharkToken" target="_blank">@TheSharkToken</a></li>
-    <li>💬 Telegram : <a href="https://t.me/SharkToken" target="_blank">t.me/SharkToken</a></li>
-    <li>🎮 Discord : <a href="https://discord.gg/tonlien" target="_blank">Rejoindre le Discord</a></li>
-  </ul>
-</section>
+  <section id="contact" class="contact">
+    <h2>Contact & réseaux sociaux</h2>
+    <p>Rejoins-nous pour suivre l'aventure et participer !</p>
+    <p>
+      <a href="https://twitter.com/TheSharkToken" target="_blank">Twitter</a> | 
+      <a href="https://t.me/TheSharkToken" target="_blank">Telegram</a> | 
+      <a href="https://discord.gg/sharktoken" target="_blank">Discord</a>
+    </p>
+  </section>
+</main>
 
 <footer>
-  <p>&copy; 2025 The Shark Token. Tous droits réservés. | Email : team@sharktoken.xyz</p>
+  &copy; 2025 The Shark Token — Tous droits réservés
 </footer>
 
 </body>
 </html>
+
+
+---
